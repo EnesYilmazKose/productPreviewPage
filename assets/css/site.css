@@ -41,3 +41,22 @@ header > div > nav > ul > li > a > #textHeader:hover {
     color: green !important;
     font-weight: bold;
 }
+#canvas > div > div > div > a {
+    text-decoration: none;
+    color: black;
+}
+#canvas > div > div > div > p > a {
+    text-decoration: none;
+    color: black;
+}
+#last1Item {
+    background-color: pink;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#price {
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
