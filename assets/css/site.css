@@ -5,7 +5,6 @@ header > div > ul > li {
 header > div > ul > li > a:hover {
     color:  #575757 !important;
 }
-
 header > div {
     align-items: center;
     max-width: 1200px;
@@ -19,50 +18,26 @@ header > div > nav > a > img {
 header > div > nav > form {
     width: 600px;
 }
-header > div > nav > ul > li > a:hover {
+header > div > nav > ul > li > a > #textHeader:hover {
     color: green !important;
     text-decoration: underline !important;
 }
-
-
-
-
-
-
-div > #wrapper > ul >{
-    height: 31px;
-    padding-left: 70%
+#canvas {
+    align-items: center;
+    max-width: 1200px;
 }
-
-div > #wrapper > ul > li > a{
-    color: #999999;
-    text-decoration: none !important;
-    font-size: 12px;
+#canvas > #categories > li {
+    font-size: 13px;
 }
-
-div > #wrapper > ul > li > a:hover{
-    color: #575757;
+#canvas > #categories > li > a:hover {
+    text-decoration: underline;
+    color: green !important;
+    font-weight: bold;
 }
-
-div > #stickyWrapper > nav > div > a  > img{
-    height: 120px !important;
+#canvas > #pathCat > li {
+    font-size: 10px;
 }
-div > #stickyWrapper > nav > div > form{
-    width: 600px !important;
-}
-div > #stickyWrapper > nav > div > form > i {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    right: 330px;
-    top: 55px;
-}
-div > #stickyWrapper > nav > div > ul > li > a{
-    text-decoration: none !important;
-    color: black;
-    font-size: 13px !important;
-}
-div > #stickyWrapper > nav > div > ul > li > a:hover{
-    text-decoration: none !important;
-    color: orange;
+#canvas > #pathCat > li > a:hover {
+    color: green !important;
+    font-weight: bold;
 }
