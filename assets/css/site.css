@@ -1,13 +1,14 @@
 header > div > ul > li {
     font-size: 12px;
     color:  #999999;
+    padding-top: 5px;
 }
 header > div > ul > li > a:hover {
     color:  #575757 !important;
 }
 header > div {
     align-items: center;
-    max-width: 1500px;
+    max-width: 1600px;
 }
 header > div > nav {
     justify-content: baseline;
@@ -16,7 +17,7 @@ header > div > nav > a > img {
     width: 120px;
 }
 header > div > nav > form {
-    width: 600px;
+    width: 800px;
 }
 header > div > nav > ul > li > a > #textHeader:hover {
     color: green !important;
@@ -24,7 +25,7 @@ header > div > nav > ul > li > a > #textHeader:hover {
 }
 #canvas {
     align-items: center;
-    max-width: 1500px;
+    max-width: 1600px;
 }
 #canvas > #categories > li {
     font-size: 13px;
