@@ -1,3 +1,9 @@
+@media only screen and (max-width: 980px) {
+    #ItemDescImage {
+        display: none !important;
+    }
+} 
+
 header > div > ul > li {
     font-size: 12px;
     color:  #999999;

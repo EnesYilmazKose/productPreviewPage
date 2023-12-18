@@ -195,8 +195,8 @@
       </li>
     </ul>
     <div class="row">
-      <div class="col-sm-12 col-lg-6 col-xl-5" >
-        <div id="previewedItem" class="carousel slide" style="padding: 0px 5px; border: solid; border-radius: 7px; border-width: 0.5px;" >        
+      <div class="col-sm-12 col-lg-6 col-xl-5" style="align-items: flex-start; justify-content: center; display: flex;" >
+        <div id="previewedItem" class="carousel slide" style="padding: 0px 5px; border: solid; border-radius: 7px; border-width: 0.5px; max-width: 500px; margin-top: 25px;" >        
           <div class="carousel-indicators">
             <button style="background-color: grey;" type="button" data-bs-target="#previewedItem" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button style="background-color: grey;" type="button" data-bs-target="#previewedItem" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -431,7 +431,9 @@
         <h5>Ürün Bilgileri</h5>
         <div class="card" style="padding: 10px;">
           <div class="row">
-            <div class="col-2"><img src="assets/img/Iphone15ProMax/1.webp" alt="MiniPicItem" style="width: 200px; padding: 0px 20px;"></div>
+            <div class="col-2" id="ItemDescImage">
+              <img src="assets/img/Iphone15ProMax/1.webp" alt="MiniPicItem" style="width: 200px; padding: 0px 20px;">
+            </div>
             <div class="col-10">
               <div class="d-flex justify-content-between">
                 <span style="font-size: larger; font-weight: bold;">Apple iPhone 15 Pro Max 256 GB Natürel Titanyum</span>
