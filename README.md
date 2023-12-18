@@ -1,1 +1,1 @@
-#https://yellow-meadow-0077ee410.4.azurestaticapps.net
+#https://product-preview-page-enesyilmazkoses-projects.vercel.app
