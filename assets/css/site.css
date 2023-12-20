@@ -14,6 +14,12 @@
     #profile {
         display: none;
     }
+    #offCanvasSidebar {
+        display: flex !important;
+    }
+    #sidebar {
+        display: none;
+    }
 
 } 
 
@@ -61,7 +67,9 @@ header > div > nav > ul > li > a > #textHeader:hover {
 #offCanvasProfile {
     display: none;
 }
-
+#offCanvasSidebar {
+    display: none;
+}
 #canvas > #pathCat > li {
     font-size: 14px;
 }
@@ -112,4 +120,9 @@ header > div > nav > ul > li > a > #textHeader:hover {
 
 #greenButton:hover {
     background-color: #0f5534;
+}
+
+.form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
 }
