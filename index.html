@@ -43,7 +43,7 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">          
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav flex-row gap-3">
+        <ul id="profile" class="navbar-nav flex-row gap-3">
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="bi bi-person"><span>&nbsp; </span></i><span id="textHeader">Hesabım</span></a>
           </li>
@@ -58,121 +58,148 @@
     </div>    
   </header>
   <div id="canvas" class="container-fluid" style="max-width: 1600px;">
-    <button id="offCanvasCategories" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      Kategoriler
-    </button>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kategoriler</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          <ul id="categoriesInCanvas" class="navbar-nav justify-content-between">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" href="#"  data-bs-toggle="dropdown" aria-expanded="false">1. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">2. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">3. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">4. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">5. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">6. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">7. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">8. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">9. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">10. Kategori</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
-                <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
-              </ul>
-            </li>
-            
-          </ul>
+    <div class="d-flex gap-2">
+      <button id="offCanvasProfile" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Profil
+      </button>
+      <button id="offCanvasCategories" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCategoriesContent" aria-controls="offcanvasCategoriesLabel">
+        Kategoriler
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Profil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        
+        <div class="offcanvas-body">
+          <div>
+            <ul id="ProfileInCanvas" class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-person"><span>&nbsp; </span></i><span id="textHeader">Hesabım</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-heart"></i><span>&nbsp; </span></i><span id="textHeader">Favorilerim</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cart"></i><span>&nbsp; </span></i><span id="textHeader">Sepetim</span></a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvasCategoriesContent" aria-labelledby="offcanvasCategoriesLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasCategoriesLabel">Kategoriler</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul id="categoriesInCanvas" class="navbar-nav justify-content-between">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" href="#"  data-bs-toggle="dropdown" aria-expanded="false">1. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">2. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">3. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">4. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">5. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">6. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">7. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">8. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">9. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">10. Kategori</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">2. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">3. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">4. Alt Kategori</a></li>
+                  <li><a class="dropdown-item" href="#">5. Alt Kategori</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
       </div>
     </div>
     <ul id="categories" class="navbar-nav flex-row justify-content-between">

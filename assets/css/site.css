@@ -8,6 +8,13 @@
     #categories {
         display: none;
     }
+    #offCanvasProfile {
+        display: flex !important;
+    }
+    #profile {
+        display: none;
+    }
+
 } 
 
 header > div > ul > li {
@@ -49,6 +56,9 @@ header > div > nav > ul > li > a > #textHeader:hover {
 }
 
 #offCanvasCategories {
+    display: none;
+}
+#offCanvasProfile {
     display: none;
 }
 
