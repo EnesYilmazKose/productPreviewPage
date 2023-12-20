@@ -2,6 +2,12 @@
     #ItemDescImage {
         display: none !important;
     }
+    #offCanvasCategories {
+        display: flex !important;
+    }
+    #categories {
+        display: none;
+    }
 } 
 
 header > div > ul > li {
@@ -41,6 +47,11 @@ header > div > nav > ul > li > a > #textHeader:hover {
     color: green !important;
     font-weight: bold;
 }
+
+#offCanvasCategories {
+    display: none;
+}
+
 #canvas > #pathCat > li {
     font-size: 14px;
 }
@@ -87,4 +98,8 @@ header > div > nav > ul > li > a > #textHeader:hover {
     font-size: 30px;
     font-weight: bold;
     color: green;
+}
+
+#greenButton:hover {
+    background-color: #0f5534;
 }
